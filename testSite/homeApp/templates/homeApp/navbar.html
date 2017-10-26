@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+{% if request.session.lang == "he" %}
+    <html dir="rtl">
+{% endif %}
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/general.css"/>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a class="active" href="#home">
+    {% if request.session.lang == "en" %}
+Home
+    {% elif request.session.lang == "he" %}
+בית
+    {% else %}
+Home
+    {% endif %}
+    </a>
+    <a href="">test {{strings.home}} test</a>
+    <a href=""></a>
+    <a href=""></a>
+    <a href="#logIn" style="float:right">log in</a>
+    <a href="#about" style="float:right">about</a>
+</div>
+<div>
+    <img src="/static/stop.png" alt="failed to include" />
+</div>
+</body>
+</html>
