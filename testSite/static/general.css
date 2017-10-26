@@ -2,7 +2,7 @@ body {margin:0;}
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #0091FF;
 }
 
 .topnav a {
@@ -16,7 +16,7 @@ body {margin:0;}
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #000DBD;
   color: black;
 }
 

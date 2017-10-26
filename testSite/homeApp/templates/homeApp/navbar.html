@@ -8,20 +8,12 @@
 </head>
 <body>
 <div class="topnav" id="myTopnav">
-    <a class="active" href="#home">
-    {% if request.session.lang == "en" %}
-Home
-    {% elif request.session.lang == "he" %}
-בית
-    {% else %}
-Home
-    {% endif %}
-    </a>
-    <a href="">test {{strings.home}} test</a>
-    <a href=""></a>
-    <a href=""></a>
-    <a href="#logIn" style="float:right">log in</a>
-    <a href="#about" style="float:right">about</a>
+    <a class="active" href="#SignIn" style="float:right">{{strings.signin}}</a>
+    <a href="Sell">{{strings.sell}}</a>
+    <a href="Rent">{{strings.rent}}</a>
+    <a href="Trade">{{strings.trade}}</a>
+    <a href="Agent">{{strings.agent}}</a>
+
 </div>
 <div>
     <img src="/static/stop.png" alt="failed to include" />
