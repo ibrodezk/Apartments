@@ -2,7 +2,7 @@
 #strings variables
 he = "he"
 en = "en"
-
+languages = [he,en]
 #translation variables
 Strings = {
     'heHome' : "בית",
@@ -32,7 +32,7 @@ home = "home"
 def getNebBarCon(language):
     return {
         "home" : Strings[language + 'Home'],
-        "sell" : Strings[language + 'Sell'],
+        "sales" : Strings[language + 'Sell'],
         "rent" : Strings[language + 'Rent'],
         "trade" : Strings[language + 'Trade'],
         "signin" : Strings[language + 'SignIn'],
@@ -40,9 +40,25 @@ def getNebBarCon(language):
 
     }
 
+def getGlobalCon(language):
+    return {
+        "home" : Strings[language + 'Home'],
+        "sales" : Strings[language + 'Sell'],
+        "rent" : Strings[language + 'Rent'],
+        "trade" : Strings[language + 'Trade'],
+        "signin" : Strings[language + 'SignIn'],
+        "agent" : Strings[language + 'Agent']
+
+    }
+
+strings_Title = "דירהקל"
+
 def navbarStrings(language):
     if(language == en):
         return getNebBarCon(en)
     if(language == he):
         return getNebBarCon(he)
     return enNavBarCon
+
+def getTitle():
+    return "test"

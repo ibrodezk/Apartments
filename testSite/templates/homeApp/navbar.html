@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+{% if request.session.lang == "he" %}
+    <html dir="rtl">
+    <html lang="he">
+{% endif %}
+{% load i18n %}
+<head>
+    {% load staticfiles %}
+    <title>{% trans "דירהקל" %}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'homeApp/images/temp.ico' %}"/>
+    <link rel="script" type="text/javascript" src="{% static 'homeApp/javascript/utils.js' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'homeApp/css/general.css' %}"/>
+</head>
+<body>
+<!--<script>
+//request.session.lang = "he";
+document.write(Date() + "<br> <br>");
+</script> -->
+<div class="topnav" id="myTopnav">
+    <a class="active" href="#SignIn" style="float:right">{% trans "Sign in" %}</a>
+    <!--<a class="active" href="#SignIn" style="float:right">{{strings.signin}}</a> -->
+    <a href="{% url 'sales' %}">{% trans "Sales" %}</a>
+    <a href="{% url 'sales' %}">{% trans "Rent" %}</a>
+    <a href="/trade">{% trans "Trade" %}</a>
+    <a href="/agent">{% trans "Agent" %}</a>
+    <div class="dropdown" style="float:right">
+        <button class="dropbtn" style="float:bottom">Dropdown
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="/setPrefs?lang=en">english</a>
+            <a href="#">עברית</a>
+        </div>
+    </div>
+</div>
+
+{% block content %}{% endblock %}
+
+<div>
+    <img src="{% static 'homeApp/images/stop.png' %}" alt="failed to include stop image" />
+</div>
+</body>
+</html>

@@ -15,22 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url ,include
 from django.contrib import admin
-from django.utils.translation import activate
-from django.conf.urls.i18n import i18n_patterns
-from django.utils.translation import ugettext_lazy as _
 
-activate("he");
+from django.conf.urls import url ,include
+from . import views
+
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^', include('homeApp.urls')),
-    url(r'^sales/', include('sales.urls')),
-    url(r'^setPrefs/', include('utils.urls')),
-    url(r'^i18n/', include('django.conf.urls.i18n')),
-
+    url(r'^.*$', views.setPrefs, name='setPrefs'),
 ]
-urlpatterns += i18n_patterns(
-    url(r'^', include('homeApp.urls')),
-    url(_(r'^sales/'), include('sales.urls')),
-    url(r'^setPrefs/', include('utils.urls')),
-)
-
