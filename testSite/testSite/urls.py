@@ -22,15 +22,13 @@ from django.utils.translation import ugettext_lazy as _
 activate("he");
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include('homeApp.urls')),
-    url(r'^sales/', include('sales.urls')),
-    url(r'^setPrefs/', include('utils.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
 
 ]
 urlpatterns += i18n_patterns(
+    url(r'^user/', include('userControlApp.urls')),
     url(r'^', include('homeApp.urls')),
-    url(_(r'^sales/'), include('sales.urls')),
+    url(r'^sales/', include('sales.urls')),
     url(r'^setPrefs/', include('utils.urls')),
 )
 

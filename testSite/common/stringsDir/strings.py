@@ -40,6 +40,11 @@ def getNebBarCon(language):
 
     }
 
+def getFormSearchSales():
+    return {
+        "date_help_text" : "Enter a date between now and 4 weeks (default 3)"
+    }
+
 def getGlobalCon(language):
     return {
         "home" : Strings[language + 'Home'],

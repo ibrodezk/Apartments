@@ -19,4 +19,5 @@ from . import views
 urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^navbar/$', views.navbar, name='navbar'),
+
 ]

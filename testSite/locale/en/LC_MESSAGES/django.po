@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-17 17:04+0200\n"
+"POT-Creation-Date: 2017-12-17 19:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,34 +17,46 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: templates/homeApp/navbar.html:19
-msgid "Sign in"
-msgstr ""
-
-#: templates/homeApp/navbar.html:21
-msgid "Sales"
+#: templates/homeApp/navbar.html:11
+msgid "דירהקל"
 msgstr ""
 
 #: templates/homeApp/navbar.html:22
-msgid "Rent"
-msgstr ""
-
-#: templates/homeApp/navbar.html:23
-msgid "Trade"
+msgid "Sign in"
 msgstr ""
 
 #: templates/homeApp/navbar.html:24
+msgid "Sales"
+msgstr ""
+
+#: templates/homeApp/navbar.html:25
+msgid "Rent"
+msgstr ""
+
+#: templates/homeApp/navbar.html:26
+msgid "Trade"
+msgstr ""
+
+#: templates/homeApp/navbar.html:27
 msgid "Agent"
 msgstr ""
 
-#: testSite/settings.py:123
+#: testSite/settings.py:124
 msgid "English"
 msgstr ""
 
-#: testSite/settings.py:124
+#: testSite/settings.py:125
 msgid "Hebrew"
-msgstr ""
+msgstr "עברית"
 
 #: testSite/urls.py:33
 msgid "^sales/"
 msgstr ""
+
+#: manual added for languages var navbar
+msgid "he"
+msgstr "עברית"
+
+#: manual added for languages var navbar
+msgid "en"
+msgstr "English"
